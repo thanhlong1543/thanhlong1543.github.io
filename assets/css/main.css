@@ -816,7 +816,11 @@
 /* app_container */
 
 .app__container{
-    background-color: #F5F5F5;
+    background-color: rgb(243, 240, 240);
+}
+
+.app__content {
+    padding-top: 36px;
 }
 
 .category {
@@ -824,4 +828,129 @@
     border-radius: 2px;
 
 }
+
+.category_heading {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    padding: 8px 8px;  
+    margin-top: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.category_heading-icon {    
+    position: relative;
+    top: -1px;
+    margin-right: 4px;
+    font-size: 1.4rem;
+}
+
+.category-list {
+    padding: 0 0 6px 0;
+    list-style: none;
+    margin-left: 9px;
+}
+
+
+.category-item--active a  {
+    color: var(--primary-color);
+}
+
+.category-item--active a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+    border: 4px solid;
+    transform: translateY(-50%);
+    border-color: transparent transparent transparent var(--primary-color);
+}
+
+.category-item__link {
+    position: relative;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 4px 16px;
+    display: block;
+    transition: right linear 0.1s;
+    right: 0;
+}
+
+.category-item__link:hover {
+    right: -4px;
+    color: var(--primary-color);
+}
+
+/* Home sort + filter*/
+
+.home-filter {
+    padding: 12px 22px;
+    display: flex;
+    align-items: center;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.home-filter-label {
+    font-size: 1.4rem;
+    color: #555555;
+    margin-right: 16px;
+}
+
+.home-filter_btn {
+    min-width: 90px;
+    margin-right: 12px;
+}
+
+.home-filter__page {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.home-filter__page-num {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-right: 22px;
+}
+
+.home-filter__page-current {
+    color: var(--primary-color);
+}
+
+.home-filter__page-control {
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex;
+    width: 72px;
+    height: 36px;
+}
+
+.home-filter__page-btn {
+    background-color: var(--white-color);
+    display: flex;
+    flex: 1;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color:#555;
+}   
+
+.home-filter__page-btn--disabled {
+    cursor: default;
+    background-color: #f9f9f9;
+
+}
+
+.home-filter__page-btn--disabled .home-filter__page-icon {
+    color: #ccc;
+}
+
+.home-filter__page-btn:first-child {
+    border-right: 1px solid #eee;
+}
+
+.home-filter__page-icon {
+    margin: auto;
+}
+
 
