@@ -116,6 +116,10 @@
                 </nav>
                 <!-- Header with search -->
                 <div class="header-with-search">
+
+                    <label for="mobile-search-checkbox" class="header__mobile-search">
+                        <i class="header__mobile-search-icon fas fa-search"></i>
+                    </label>
                     <div class="header__logo hide-on-tablet">
                         <a href="/" class="header__logo-link">
                             <svg class="header__logo-img" viewBox="0 0 192 65">
@@ -126,6 +130,8 @@
                         </a>
                     </div>
                     
+                    <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
+
                     <div class="header__search">
                         <div class="header__search-input-wrap">
                             <input type="text" class="header__search-input" placeholder="Nhập để tìm kiếm sản phẩm">
@@ -351,9 +357,9 @@
         </header>
         <div class="app__container">
             <div class="grid wide">
-                <div class="grid__row app__content">
-                    <div class="grid__column-2">
-                        <nav class="category">
+                <div class="row sm-gutter app__content">
+                    <div class="col l-2 m0 c0">
+                        <nav class="category hide-on-mobile-tablet">
                             <h3 class="category_heading">
                                 <i class="category_heading-icon fas fa-list"></i>
                                 Danh Mục</h3>
@@ -370,7 +376,7 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="grid__column-10">
+                    <div class="col l-10 m-12 c-12">
                         <div class="home-filter hide-on-mobile-tablet">
                             <span class="home-filter-label">Sắp xếp theo</span>
                             <button class="btn home-filter_btn">Phổ biến</button>
@@ -406,10 +412,47 @@
                             </div>
                         </div>
 
+                        <nav class="mobile-category">
+                            <ul class="mobile-category__list">
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> Dụng Dụng Dụng DụngDụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> Dụng Dụng Dụng Dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> Dụng Dụng Dụng Dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> Dụng Dụng Dụng Dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> Dụng Dụng Dụng Dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> Dụng Dụng Dụng Dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> Dụng Dụng Dụng Dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> Dụng Dụng Dụng Dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> Dụng Dụng Dụng Dụng </a>
+                                </li>
+                                <li class="mobile-category__item">
+                                    <a href="" class="mobile-category__link"> Dụng Dụng Dụng Dụng </a>
+                                </li>
+
+                            </ul>
+                        </nav>
+
+
                         <div class="home-product">
-                            <div class="grid__row">
+                            <div class="row sm-gutter">
                                  <!-- product item -->
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1586337175-myphamohui-lgvina.png);"></div>
                                             <h4 class="home-product-item__name">Sữa rửa mặt Whoo vàng Gong Jin Yang Foam Cleanser 40ml</h4>
@@ -445,7 +488,7 @@
                                             </div>
                                         </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1585291439-myphamohui-lgvina.png);"></div>
                                             <h4 class="home-product-item__name">Bộ dưỡng trắng da Su:m37 Water-full Radiant 3pcs Set</h4>
@@ -481,7 +524,7 @@
                                             </div>
                                         </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1580888419-myphamohui-lgvina.png);"></div>
                                             <h4 class="home-product-item__name"> Bộ kem đặc trị vùng mắt Ohui Age Recovery Wrinkle Cut Serum.</h4>
@@ -517,7 +560,7 @@
                                             </div>
                                         </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1586336630-myphamohui-lgvina.png);"></div>
                                             <h4 class="home-product-item__name"> Set sữa rửa mặt Ohui Prime Gel Cleanser</h4>
@@ -553,7 +596,7 @@
                                             </div>
                                         </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1580887317-myphamohui-lgvina.png);"></div>
                                             <h4 class="home-product-item__name">Set dưỡng ẩm whoo vàng Gong Jin Hyang 336ml</h4>
@@ -589,7 +632,7 @@
                                             </div>
                                         </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1580884899-myphamohui-lgvina.png);"></div>
                                             <h4 class="home-product-item__name">Set kem mắt hoàn lưu cao phiên bản limited tăng đôi thể tích 50ml</h4>
@@ -625,7 +668,7 @@
                                             </div>
                                         </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1580885861-myphamohui-lgvina.png);"></div>
                                             <h4 class="home-product-item__name">Son lì Su:m37 Losec Suma Elixir Golden Lipstick tặng kèm bảng son Su:m 37</h4>
@@ -661,7 +704,7 @@
                                             </div>
                                         </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1580817749-myphamohui-lgvina.png);"></div>
                                             <h4 class="home-product-item__name">Cushion trang điểm dưỡng trắng Whoo Radiant White Moisture Cushion Foundation</h4>
@@ -697,7 +740,7 @@
                                             </div>
                                         </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1580794419-myphamohui-lgvina.png);"></div>
                                             <h4 class="home-product-item__name">Set tinh chất Ohui xanh Prime Advancer Ampoule Serum phiên bản 90ml</h4>
@@ -733,7 +776,7 @@
                                             </div>
                                         </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                         <a class="home-product-item" href="#">
                                             <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1574870992-myphamohui-lgvina.png);"></div>
                                             <h4 class="home-product-item__name">Tinh chất cô đặc chuyên phục hồi da khô và da nhờn thiếu nước Ampoule 777</h4>
@@ -769,7 +812,7 @@
                                             </div>
                                         </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1574916494-myphamohui-lgvina.png);"></div>
                                         <h4 class="home-product-item__name"> TINH CHẤT AMPOULE SERUM OHUI XANH 20ML</h4>
@@ -805,7 +848,7 @@
                                         </div>
                                     </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1574919130-myphamohui-lgvina.png);"></div>
                                         <h4 class="home-product-item__name">Set nước sữa tái sinh Ohui thefirst</h4>
@@ -841,7 +884,7 @@
                                         </div>
                                     </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1574924693-myphamohui-lgvina.png);"></div>
                                         <h4 class="home-product-item__name">Set kem chống lão hóa Whoo Ja Yoon Cream</h4>
@@ -877,7 +920,7 @@
                                         </div>
                                     </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1575351507-myphamohui-lgvina.png);"></div>
                                         <h4 class="home-product-item__name">Set phấn nước cushion Ohui hoa hồng 15g x 3 ( 3 lõi )</h4>
@@ -913,7 +956,7 @@
                                         </div>
                                     </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1577360256-myphamohui-lgvina.png);"></div>
                                         <h4 class="home-product-item__name">Set tinh chất tái sinh Whoo Bichup Self-Generating Anti-Aging Essence</h4>
@@ -949,7 +992,7 @@
                                         </div>
                                     </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1575705318-myphamohui-lgvina.png);"></div>
                                         <h4 class="home-product-item__name">Phấn “WHOO GONGJINHYANG MI ROYAL PACT” Phiên bảng Limited 2019</h4>
@@ -985,7 +1028,7 @@
                                         </div>
                                     </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1575704558-myphamohui-lgvina.png);"></div>
                                         <h4 class="home-product-item__name">SET TINH CHẤT OHUI AGE RECOVERY</h4>
@@ -1021,7 +1064,7 @@
                                         </div>
                                     </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1575712923-myphamohui-lgvina.png);"></div>
                                         <h4 class="home-product-item__name">Bộ sản phẩm tái sinh da cao cấp Whoo Cheongidan HwaHyun chống lão hóa</h4>
@@ -1057,7 +1100,7 @@
                                         </div>
                                     </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1575712163-myphamohui-lgvina.png);"></div>
                                         <h4 class="home-product-item__name"> Set tinh chất vàng Gold Ampoule tái sinh Whoo Hwahyun</h4>
@@ -1093,7 +1136,7 @@
                                         </div>
                                     </a>     
                                 </div>
-                                <div class="grid__column-2-4">
+                                <div class="col l-2-4 m-4 c-6">
                                     <a class="home-product-item" href="#">
                                         <div class="home-product-item__img" style="background-image: url(https://img.tickid.vn/photos/resized/320x/83-1575812527-myphamohui-lgvina.png);"></div>
                                         <h4 class="home-product-item__name"> Set dưỡng da cấp nước Su:m37 water-full</h4>
@@ -1172,9 +1215,9 @@
             </div>
         </div>
         <footer class="footer">
-            <div class="grid wide">
-                <div class="grid__row">
-                    <div class="grid__column-2-4">
+            <div class="grid wide footer__content">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Chăm sóc khách hàng</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1188,7 +1231,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Giới thiệu</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1202,7 +1245,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Danh mục</h3> 
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1216,7 +1259,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-6">
                         <h3 class="footer__heading">Theo dõi chúng tôi</h3>
                         <ul class="footer-list">
                             <li class="footer-item">
@@ -1239,7 +1282,7 @@
                             </li>  
                         </ul>                     
                     </div>
-                    <div class="grid__column-2-4">
+                    <div class="col l-2-4 m-4 c-12">
                         <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3> 
                         <div class="footer__download">
                             <img src="/assets/img/QR_Code.png" alt="Donwload QR" class="footer__download-qr">
@@ -1255,7 +1298,7 @@
                         </div>                      
                     </div>
                 </div>
-                <div class="grid__row">   
+                <div class="row">   
                 </div>
                 <div class="grid_row grid_row_footer__menu">
                     <ul class="footer__menu">
